@@ -19,7 +19,7 @@ tokio-postgres = "0.7.8"
 [dev-dependencies]
 postgres = "0.19.5"
 serde = { version = "1.0.171", features = ["derive"] }
-tokio = { version = "1.29.1", features = ["macros"] }
+tokio = { version = "1.29.1", features = ["macros", "rt-multi-thread"] }
 tokio-postgres = "0.7.8"
 
 # [dependencies]

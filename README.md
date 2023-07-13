@@ -35,7 +35,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
 
     let rows = client.query("SELECT name, age FROM Person", &[]).await?;
 
-    let people: Vec<Person> = serde_postgres::from_rows(&rows)?;
+    let people: Vec<Person> = pgrow2serde::from_rows(&rows)?;
 
     for person in people {
         println!("{:?}", person);
@@ -74,7 +74,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     let rows = client.query("SELECT name, age FROM Person", &[])?;
 
-    let people: Vec<Person> = serde_postgres::from_rows(&rows)?;
+    let people: Vec<Person> = pgrow2serde::from_rows(&rows)?;
 
     for person in people {
         println!("{:?}", person);
