@@ -45,7 +45,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
 }
 ```
 
-<!-- **`postgres`** (synchronous)
+**`postgres`** (synchronous)
 
 ```rust
 use postgres::{Client, NoTls};
@@ -82,4 +82,4 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     Ok(())
 }
-``` -->
+```
