@@ -1,4 +1,4 @@
-# Serde Postgres
+# PG row to Serde
 Easily deserialize rows from [`tokio-postgres`](//docs.rs/tokio-postgres) or [`postgres`](//docs.rs/postgres) into
 arbitrary structs. (Only deserialization is supported).
 
